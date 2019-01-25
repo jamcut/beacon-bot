@@ -9,7 +9,7 @@ Configure beacon_bot.py to have valid values for the `TEAM_SERVER_NAME` and `TEA
 
 ### Usage
 
-Run `beacon-bot.cna` using the `agscript` tool in Cobalt Strike.
+Run `beacon_bot.cna` using the `agscript` tool in Cobalt Strike.
 
 ```./agscript <IP> <port> beacon-bot <password> beacon_bot.cna```
 
