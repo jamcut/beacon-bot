@@ -1,0 +1,8 @@
+on beacon_initial {
+	$external_ip = beacon_info($1, "external");
+	$internal_ip = beacon_info($1, "internal");
+	$computer = beacon_info($1, "computer");
+	$user = beacon_info($1, "user");
+	$is_64 = beacon_info($1, "is64");
+	println(readAll(exec(@("python2.7","beacon_bot.py","-e","$external_ip","-i","$internal_ip","-u","$user","-m","$computer","-a","$is_x64"))));
+}
